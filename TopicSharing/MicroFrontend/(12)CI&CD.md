@@ -6,13 +6,13 @@
 
 這個議題又可以分以下幾種來說明
 
-- Monolith
+- Monolith Repo
 - Mono Repo
 - Multi Repo
 
 在不同的專案架構下也有不同的策略可以執行
 
-#### Monolith
+#### Monolith Repo
 
 一般最常見的架構就是 Monolith 專案結構，沒有去分多個 package，這時純粹只是 shared 不同的資料夾進行共享，打包出來也會是不同的 entry point。同常此時規模通常不大，也不太好做分散式部署，微前端需求還未明朗。當分模塊打包時，你很難用 module federation 去執行共用。所以此時 CI/CD 不太會去做到微前端，真要做依然還是會統一執行腳本，並且會在 CD 完成後再分派部署到多個服務上。如果有極為特殊情況，才會單獨為每個分塊作客製化腳本去處理。
 
