@@ -23,6 +23,12 @@
 近年很流行 Mono Repo，個大框架和函式庫紛紛採用這種作法。那為什麼 Mono Repo 行之有年，過去使用的人不多呢？
 其實主因在於過去的 Mono Repo 是仰賴 GitSubmodule 的實現，但隨著 npm workspace 的成熟，各方工具出現，包含 yarn workspace, pnpm workspace, lerna, nx 等等工具興起，JavaScript 實現 Mono Repo 這件事變得更加簡單。但 Mono Repo 並非全能靈藥，一個 Repository 的大小成長已經漸漸會負擔，也勢必會沈重起來，適當再拆成 Multi Repo 也不是不好的，Mono Repo 成為一個很好的過渡方案。
 
+### MonoRepo 跟微前端什麼關係？
+
+先說結論：「沒有任何毛關係」
+
+奇怪？各大討論微前端都會談到 MonoRepo，但為什麼沒有任何關係？其實 MonoRepo 就是一個專案管理手法，剛開始製作微前端時也是各種需要共用情境，你可能不知道如何拆模組，也可能各種東西黏在一起不知道如何解耦。但 MonoRepo 提供了一個管理方式，在熟悉微前端這樣的架構前可以有效管並穩定的理整個專案。加上近年 MonoRepo 的盛行，多多少少就很容易被同時拿出來討論，但 MonoRepo 本身跟微前端定義直接相關，只是發布上多少可以說採用分散部署的概念去建構。
+
 ### Resource
 
 - [GitSubmodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
