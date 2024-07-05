@@ -13,8 +13,8 @@
 - [(11)樣式管理問題](<./(11)樣式管理問題.md>)
 - [(12)CI/CD](<./(12)CI&CD.md>)
 - [(13)Monorepo](<./(13)Monorepo.md>)
-- [(14)ModuleFederation-RemoteChunk](<./(14)ModuleFederation-RemoteChunk.md>)
-- (15)ModuleFederation-SharedPackage
+- [(14)ModuleFederation](<./(14)ModuleFederation.md>)
+- [(15)ReferenceShared](<./(15)ReferenceShared.md>)
 - ()共用模組庫管理
 - ()伺服器渲染
 - ()建立一個 React 的微前端
