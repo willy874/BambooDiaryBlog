@@ -19,7 +19,7 @@
 import ReactDOM from "react-dom/client";
 import App from "micro-component/app";
 
-class MicroElement extends HTMLElement {
+class ReactMicroElement extends HTMLElement {
   connectedCallback() {
     const mountPoint = document.createElement("div");
     this.appendChild(mountPoint);
@@ -28,7 +28,7 @@ class MicroElement extends HTMLElement {
   }
 }
 
-customElements.define("micro-app", MicroElement);
+customElements.define("react-app", MicroElement);
 ```
 
 該方法延展性很好，隨時可以替換成不同框架的元件，也可以轉成 Shadow DOM 作隔離，也可以在 DOM 上加工做不同的使用。當如果在不同微前端使用的套件版本不一致時，是很容易升級跟並存的。
