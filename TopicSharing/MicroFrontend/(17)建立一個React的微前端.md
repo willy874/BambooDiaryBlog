@@ -13,7 +13,7 @@
 
 ### 以 WebComponent 作為微前端
 
-以 WebComponent 作為載體，重新建立一個 React Instance。此時上層架構不能與該 WebComponent 的 React 相同的實例，必須不共享記憶體，否則會報錯(此時為 React@^18)。
+以 WebComponent 作為載體，重新建立一個 React Instance。
 
 ```jsx
 import ReactDOM from "react-dom/client";
