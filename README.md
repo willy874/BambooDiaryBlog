@@ -2,12 +2,9 @@
 
 ## Blog
 
-## StudyNotes
-
-### Kubernetes
+- [文章列表](./Blog/README.md)
 
 ## TopicSharing
 
-### MicroFrontend
-
-### StateManager
+- [狀態管理器](./TopicSharing/StateManager/造一個狀態管理器的輪子.md)
+- [微前端](./TopicSharing/MicroFrontend/README.md)
