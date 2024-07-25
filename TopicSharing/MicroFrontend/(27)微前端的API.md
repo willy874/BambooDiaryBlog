@@ -24,4 +24,8 @@
 
 ### Network
 
-可以應用 HTTP Request + WebSocket，應用
+可以應用 HTTP Request + WebSocket，一樣採用網路手段來達到溝通，API 設計只需要可考慮 HTTP 手段，不需要額外學習溝通的手段。但問題在會消費一定的網路資源，而微前端只是在前端溝通，卻要追加這層流量的消費。
+
+### ServiceWork
+
+在 ServiceWork 可以去攔截對外部發出的 HTTP 請求，就可以假裝提供了某個服務，能不向網路溝通就完成內部服務的自給自足。

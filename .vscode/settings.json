@@ -3,5 +3,25 @@
   "editor.formatOnSave": true,
   "cSpell.words": [
     "replicaset"
+  ],
+  "material-icon-theme.folders.customClones": [
+    {
+      "name": "store-folder",
+      "base": "context",
+      "color": "blue-400",
+      "folderNames": ["store"]
+    },
+    {
+      "name": "fetcher-folder",
+      "base": "api",
+      "color": "blue-400",
+      "folderNames": ["fetcher"]
+    },
+    {
+      "name": "abstract-folder",
+      "base": "interface",
+      "color": "red-400",
+      "folderNames": ["abstract"]
+    },
   ]
 }
