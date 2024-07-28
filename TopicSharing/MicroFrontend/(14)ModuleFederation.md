@@ -26,9 +26,14 @@ MF 是把各個套件的各個版本分散式存在每一個微服務端點，�
 
 MF 的理念基本上貫穿所有「模組共用」的思維，使用多服務進入點管理多版本的 packages，具備版本識別與切分環境的能力，讓多個組態情境能良好管理各自的環境版本。目前其實幾乎找不到比起 MF 更完善的其他解決方案，幾乎仰賴大量的基礎建設架構的實作實現，我個人還是建議就用吧。一旦使用了 MF，模組化就會被綁定在 特定的 chunk system ，遷移上變成整個架構的成本。微前端雖然有分散部署的優點，但架構面的部分仰賴一致的規範與協定，如果一致的部分發生變動，那就會根本性的需要大幅度調整。
 
+### 除了 Webpack 外，那 Vite 呢？
+
+Vite 的 Module Federation 算是 Webpack 的閹割版，也不支援 Vite 的 dev mode，所以使用上開發體驗沒有想像中好。我的經驗上我還是以 Webpack 為主。如果你的微前端情境足夠複雜，我暫時來說依然還是建議你採用 Webpack Module Federation。但如果還不到太複雜的設計與應用，其實開發可以利用 `build + preview` 的模式來達到 MF 共享，但仍然沒有原本的開發體驗好。截至本文撰稿日，我仍然在等 Vite 官方去提供更加完善的 MF 核心方案，希望能根本性解決 Vite 在使用 MF 的 DX 不良問題。
+
 ### Resource
 
 - [Module Federation](module-federation.io)
 - [Webpack Module Federation](https://webpack.js.org/concepts/module-federation/)
+- [Vite Module Federation](https://github.com/originjs/vite-plugin-federation)
 - [一文通透讲解 webpack5 module federation](https://juejin.cn/post/7048125682861703181)
 - [Understanding Module Federation: A Deep Dive](https://scriptedalchemy.medium.com/understanding-webpack-module-federation-a-deep-dive-efe5c55bf366)
