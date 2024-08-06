@@ -11,7 +11,7 @@
 - [(9)全域單例狀態管理](<./(9)全域單例狀態管理.md>)
 - [(10)樣式管理問題](<./(10)樣式管理問題.md>)
 - [(11)CI/CD](<./(11)CI&CD.md>)
-- [(10)](<./(10).md>)
+- [(12)WebComponent](<./(12)WebComponent.md>)
 - [(13)Monorepo](<./(13)Monorepo.md>)
 - [(14)ModuleFederation](<./(14)ModuleFederation.md>)
 - [(15)ReferenceShared](<./(15)ReferenceShared.md>)
