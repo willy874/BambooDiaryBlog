@@ -89,8 +89,15 @@ el.addEventListener("customevent", (event) => {});
 ```js
 const child = document.querySelector("custom-component-child");
 
-child.dispatchEvent(new Event("customevent"));
+child.dispatchEvent(
+  new Event("customevent", {
+    bubbles: true, // 事件是否冒泡
+    composed: true, // 事件是否穿越 shadow DOM
+  })
+);
 ```
+
+透過原生的事件和 `bubbles` 的傳遞，可以從底層往上傳，直至上層收到事件通知。這套機制非常方便，可以輕易從底下傳遞資訊至頂層元件，然後完成狀態修改傳遞 Attribute 給底下的組件，形成單向資料流。
 
 ### Slot
 
