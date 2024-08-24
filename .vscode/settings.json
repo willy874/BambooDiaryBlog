@@ -23,5 +23,8 @@
       "color": "red-400",
       "folderNames": ["abstract"]
     },
-  ]
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "svipas.prettier-plus"
+  }
 }
